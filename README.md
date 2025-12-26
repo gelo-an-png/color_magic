@@ -180,15 +180,11 @@ The website is fully responsive and optimized for:
 - **API Source**: [ColorMagic API](https://colormagic.app)
 - **API Documentation**: Available at the ColorMagic website
 
-## License
 
-This project is for educational purposes. The ColorMagic API is provided by colormagic.app.
 
 ## Notes
 
-- The application uses only functions (no classes or constructors)
-- All CSS and JavaScript are in separate files (no inline code)
-- Unique class names prefixed with `colormagic-` to prevent conflicts
-- Proper indentation and formatting throughout
-- Mobile-first responsive design approach
+## Screenshot
+<img width="1128" height="780" alt="image" src="https://github.com/user-attachments/assets/99177aca-872b-4923-8a0b-54d79bed2150" />
+
 
