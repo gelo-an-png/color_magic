@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorMagic - Color Palette Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="colormagic-container">
+        <div class="colormagic-wrapper">
+            <div class="colormagic-header">
+                <h1 class="colormagic-title">ColorMagic Palette Search</h1>
+            </div>
+            
+            <div class="colormagic-search-container">
+                <div class="colormagic-search-wrapper">
+                    <input 
+                        type="text" 
+                        id="colormagic-search-input" 
+                        class="colormagic-search-input" 
+                        placeholder="Search color palettes (e.g., green, blue, pastel)"
+                        autocomplete="off"
+                    >
+                    <button 
+                        type="button" 
+                        id="colormagic-search-button" 
+                        class="colormagic-search-button"
+                    >
+                        <span class="colormagic-button-text">Search</span>
+                        <span class="colormagic-button-loader"></span>
+                    </button>
+                </div>
+                <div class="colormagic-filter-wrapper">
+                    <label for="colormagic-limit-select" class="colormagic-filter-label">Show:</label>
+                    <select 
+                        id="colormagic-limit-select" 
+                        class="colormagic-filter-select"
+                    >
+                        <option value="5">5 palettes</option>
+                        <option value="10" selected>10 palettes</option>
+                        <option value="15">15 palettes</option>
+                        <option value="20">20 palettes</option>
+                        <option value="all">All palettes</option>
+                    </select>
+                </div>
+                <div class="colormagic-error" id="colormagic-error"></div>
+            </div>
+            
+            <div class="colormagic-loading" id="colormagic-loading">
+                <div class="colormagic-loading-spinner"></div>
+                <p class="colormagic-loading-text">Loading...</p>
+            </div>
+            
+            <div class="colormagic-results" id="colormagic-results"></div>
+        </div>
+        
+        <footer class="colormagic-footer">
+            <p class="colormagic-footer-text">Powered by <a href="https://colormagic.app" target="_blank" class="colormagic-footer-link">ColorMagic API</a></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
